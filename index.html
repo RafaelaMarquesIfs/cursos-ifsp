@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
     <title>Page com Bootstrap</title>
 </head>
 <body>
     <h1 class="display">Rafaela Oliveira Marques</h1>
-    <div class="container">Validando Container do Bootstrap</div>
-    
+    <p class="container">Aplicando JQuery</p>
+    <div id="flip" style="background-color: lightblue;">Clique em mim</div>
+    <div id="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid amet temporibus dicta quis quam ut! Ratione, vero odit dolorem, aliquid molestiae obcaecati quaerat omnis soluta officia expedita, recusandae pariatur debitis.</div>
+     <script>
+        alert(1);
+        $('h1').hide();
+        $('p').on({
+            mouseenter: function (){
+                $(this).css('background-color', 'lightgray')
+            },
+            mouseleave: function (){
+                $(this).css('background-color', 'lightblue')
+            },
+            click: function() {
+                $(this).css('background-color', 'yellow')
+            }
+        })
+
+        $('#panel').hide();
+        $('#flip').click(function(){
+            $('#panel').slideToggle();
+        });
+
+     </script>
 </body>
 </html>
