@@ -9,12 +9,23 @@
 </head>
 <body>
     <h1 class="display">Rafaela Oliveira Marques</h1>
+    <h2 class="display">Developer</h2>
     <p class="container">Aplicando JQuery</p>
     <div id="flip" style="background-color: lightblue;">Clique em mim</div>
     <div id="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid amet temporibus dicta quis quam ut! Ratione, vero odit dolorem, aliquid molestiae obcaecati quaerat omnis soluta officia expedita, recusandae pariatur debitis.</div>
-     <script>
+    <button>Clique Aqui</button>
+    <script>
         alert(1);
-        $('h1').hide();
+        $('button').click(function(){
+            $('h1').animate({
+                left: '300px',
+                opacity: '0.5',
+                width:'+=150px',
+                marginRight: '20.0'
+            
+            });
+        });
+        $('h2').hide();
         $('p').on({
             mouseenter: function (){
                 $(this).css('background-color', 'lightgray')
@@ -27,7 +38,7 @@
             }
         })
 
-        $('#panel').hide();
+        $('#panel').css("color", "red").slideUp(2000).slideDown(2000);
         $('#flip').click(function(){
             $('#panel').slideToggle();
         });
