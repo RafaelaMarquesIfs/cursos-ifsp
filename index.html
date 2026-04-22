@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
-    <title>Page com Bootstrap</title>
+    <title>Aprendendo JQuery na Prática</title>
 </head>
 <body>
     <h1 class="display">Rafaela Oliveira Marques</h1>
@@ -14,6 +14,9 @@
     <div id="flip" style="background-color: lightblue;">Clique em mim</div>
     <div id="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid amet temporibus dicta quis quam ut! Ratione, vero odit dolorem, aliquid molestiae obcaecati quaerat omnis soluta officia expedita, recusandae pariatur debitis.</div>
     <button>Clique Aqui</button>
+
+    <p id="p-teste">Teste</p>
+
     <script>
         alert(1);
         $('button').click(function(){
@@ -42,6 +45,9 @@
         $('#flip').click(function(){
             $('#panel').slideToggle();
         });
+
+        alert( $('#p-teste').text());
+        $('#p-teste').text("Oi");
 
      </script>
 </body>
