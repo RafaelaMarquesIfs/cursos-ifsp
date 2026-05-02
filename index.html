@@ -14,22 +14,54 @@
     <button class="btn btn-primary btn-sm" disabled>Enviar</button>
     <a href="http://google.com" class="btn btn-primary disabled">Links</a>
     <br/>
-    <table class="table table-striped table-hover">
-        <tr>
+    <table class="table table-striped-columns table-warning table-hover">
+       <thead>
+         <tr>
             <th>coluna 1</th>
             <th>coluna 2</th>
             <th>coluna 3</th>
         </tr>
-        <tr>
-            <td>Dado A</td>
-            <td>Dado B</td>
-            <td>Dado C</td>
-        </tr>
-        <tr>
-            <td>Dado D</td>
-            <td>Dado E</td>
-            <td>Dado F</td>
-        </tr>
+       </thead>
+        <tbody class="table-group-divider">
+            <tr>
+                <td>Dado A</td>
+                <td>Dado B</td>
+                <td>Dado C</td>
+            </tr>
+            <tr>
+                <td>Dado D</td>
+                <td>Dado E</td>
+                <td>Dado F</td>
+            </tr>
+        </tbody>
     </table>
+    <figure class="figure">
+        <img src="http://pudim.com.br/pudim.jpg" alt="" class="figure-img img-fluid rounded">
+        <figcaption class="figure-caption">Pudim</figcaption>
+    </figure>
+
+    <form action="">
+        <fieldset disabled>
+            <div class="mb-3">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" class="form-control">
+                <div class="form-text">Preencha o seu nome completo</div>
+            </div>
+            <div class="mb-3">
+                <label for="email">E-mail:</label>
+                <input type="text" value="email@email.com" id="email" class="form-control-plaintext">
+            </div>
+            <div>
+                <input type="file" name="" class="form-control" multiple>
+            </div>
+            <div class="mb-3">
+                <select name="" id="" class="form-control">
+                    <option value="1">SP</option>
+                    <option value="2">MG</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar </button>
+        </fieldset>
+    </form>
 </body>
 </html>
