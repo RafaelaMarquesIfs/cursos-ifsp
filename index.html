@@ -26,14 +26,50 @@
                 <input type="color">
             </div>
             <div class="mb-3">
-                <select name="" id="" class="form-control">
+                <select name="" id="" class="form-select" multiple size="3">
                     <option value="1">Arquibancada - Setor 1</option>
                     <option value="2">Arquibancada - Setor 2</option>
                     <option value="3">Arquibancada - Setor 3</option>
                     <option value="4">Arquibancada - Setor 4</option>
                     <option value="5">Área VIP</option>
-                </select>
+                </select>      
             </div>
+            <div class="mb-3">
+                <label for="estado">Estado: </label>
+                <input type="text" id="estado" list="estados" class="form-control" placeholder="Digite sua cidade">
+                <datalist id="estados">
+                    <option value="São Paulo"></option>
+                    <option value="Sergipe"></option>
+                    <option value="Bahia"></option>
+                    <option value="Acre"></option>
+                    <option value="Amapá"></option>
+                    <option value="Paraná"></option>
+                    <option value="Maranhão"></option>
+                </datalist>
+            </div>
+            <div class="mb-3">
+                <div class="form-check">
+                    <input type="checkbox" id="admin" class="form-check-input">
+                    <label for="admin">Admin?</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="form-check form-switch form-check-reverse">
+                    <input type="checkbox" id="admin" class="form-check-input">
+                    <label for="admin">Admin?</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="form-check">
+                    <label for="m">Masculino</label>
+                    <input type="radio" name="sexo" id="m" value="m"  class="form-check-input"></input>
+                </div>
+                <div class="form-check">
+                    <label for="f">Feminino</label>
+                    <input type="radio" name="sexo" id="f" value="f"  class="form-check-input"></input>
+                </div>
+            </div>
+
             <input type="file" name="" id="">
             <button type="submit" class="btn btn-primary">Salvar </button>
             <button type="submit" class="btn btn-primary">Limpar </button>
